@@ -38,7 +38,8 @@
   },
   "devDependencies": {
     "bootstrap": "^5.2.2",
+    "bootstrap-social": "^5.1.1",
     "react-popper": "^2.3.0",
-    "reactstrap": "^9.1.4"
+    "reactstrap": "^9.1.5"
   }
 }
