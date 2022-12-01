@@ -18,6 +18,8 @@ class Main extends Component {
     this.setState({ selectedDish: dishId});
   }
 
+  //dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]}
+
   render() {
     return (
       <div>
@@ -27,7 +29,7 @@ class Main extends Component {
           </div>
         </Navbar>
         <Menu dishes={this.state.dishes} onClick={(dishId) => this.onDishSelect(dishId)} />
-        <DishDetail dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} />
+        <DishDetail dish={1} />
       </div>
     );
   }

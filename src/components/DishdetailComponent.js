@@ -5,13 +5,15 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 're
 
 const dishes = DISHES;
 
-const DishDetail = ({dishId}) => {
-		
+const DishDetail = ( {props} ) => {
+	
+	const dishId = props;
+
 	return (
 		<div className="dish-container flex row">
 			{dishes.map( (dish) => (
 				<div className="col-12 col-md-5 mt-5">
-					{dish.id === dishId 
+					{dish.id === dishId
 						? <Card className="ml-20" key={dish.id}>
 							{dish.name === "Uthappizza" ? <img src={uthappizza} alt={dish.name} /> : null}						
 							{dish.name === "Zucchipakoda" ? <img src={zucchipakoda} alt={dish.name} /> : null}
@@ -35,7 +37,6 @@ const DishDetail = ({dishId}) => {
 						</Card>
 						: <div></div>
 					}
-
 				</div>
 			))
 			}
