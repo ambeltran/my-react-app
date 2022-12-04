@@ -42,6 +42,7 @@
     "react": "^18.2.0",
     "react-media": "^1.10.0",
     "react-popper": "^2.3.0",
+    "react-router-dom": "^4.2.2",
     "reactstrap": "^9.1.5"
   }
 }
